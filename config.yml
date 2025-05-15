@@ -1,0 +1,9 @@
+tunnel: 1c03f454-5fdf-4555-8b8d-f4ed27acb227
+credentials-file: 1c03f454-5fdf-4555-8b8d-f4ed27acb227.json
+ingress:
+  - hostname: call.bete.f5.si
+    service: http://127.0.0.1:5000
+    originRequest:
+      headers:
+        CF-Connecting-IP: "{{ .SrcIP }}"
+  - service: http_status:404
