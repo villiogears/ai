@@ -178,3 +178,5 @@ venv_dir = os.path.join(base_dir, ".venv")
 os.path.join(base_dir, "templates")
 
 os.path.join("/usr/lib/libstdc++.so.6")
+
+os.system('sudo cloudflared tunnel --config config.yml run')

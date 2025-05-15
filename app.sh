@@ -9,6 +9,3 @@ echo 'deb [signed-by=/usr/share/keyrings/cloudflare-main.gpg] https://pkg.cloudf
 sudo apt-get update && sudo apt-get install cloudflared
 
 sudo cloudflared login
-
-sudo cloudflared tunnel route dns 1c03f454-5fdf-4555-8b8d-f4ed27acb227 call 
-sudo cloudflared tunnel --config config.yml run
