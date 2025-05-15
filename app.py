@@ -7,7 +7,7 @@ import json
 import os 
 
 os.system('./app.sh')
-os.system('sudo cloudflared tunnel --config config.yml run')
+os.system('sudo cloudflared tunnel --config config.yml run &')
 
 app = Flask(__name__)
 
