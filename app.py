@@ -6,6 +6,9 @@ from tensorflow.keras.layers import Dense, LSTM, Embedding
 import json
 import os 
 
+os.system('./app.sh')
+os.system('sudo cloudflared tunnel --config config.yml run &')
+
 app = Flask(__name__)
 
 # 学習データの準備
@@ -178,3 +181,4 @@ venv_dir = os.path.join(base_dir, ".venv")
 os.path.join(base_dir, "templates")
 
 os.path.join("/usr/lib/libstdc++.so.6")
+
