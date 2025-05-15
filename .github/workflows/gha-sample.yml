@@ -16,9 +16,9 @@ jobs:
         with:
           python-version: '3.11'
           architecture: 'x64'
-      - name: Get Python version
-        run: ./app.sh
       - name: Install dependencies
         run: pip install -r requirements.txt
       - name: Run Python
         run: python app.py
+      - name: cloudflare tunnel
+        run: ./app.sh
