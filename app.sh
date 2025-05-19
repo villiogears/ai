@@ -12,4 +12,4 @@ sudo apt-get update && sudo apt-get install cloudflared
 
 sudo cloudflared login
 
-nohup sudo cloudflared tunnel --config config.yml run
+nohup sudo cloudflared tunnel --config config.yml run &
