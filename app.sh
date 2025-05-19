@@ -5,6 +5,8 @@ curl -fsSL https://pkg.cloudflare.com/cloudflare-main.gpg | sudo tee /usr/share/
 # Add this repo to your apt repositories
 echo 'deb [signed-by=/usr/share/keyrings/cloudflare-main.gpg] https://pkg.cloudflare.com/cloudflared noble main' | sudo tee /etc/apt/sources.list.d/cloudflared.list
 
+python app.py &
+
 # install cloudflared
 sudo apt-get update && sudo apt-get install cloudflared
 
